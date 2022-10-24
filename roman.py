@@ -16,8 +16,6 @@ def roman_number(a):
             roman += "C"
             if int(repr(a+100)[-3]) == 5:
                 roman += "D"
-            elif int(repr(a+100)[-3]) == 0:
-                roman += "M"
     if a >= 10:
         if 5 <= int(repr(a)[-2]) <= 8:
             roman += "L"

@@ -1,5 +1,4 @@
 import unittest
-
 from roman import roman_number
 
 class PrimerTest(unittest.TestCase):
@@ -49,11 +48,14 @@ class PrimerTest(unittest.TestCase):
         resultado = roman_number(182)
         self.assertEqual(resultado, "CLXXXII")
     def test_16(self):
+        resultado = roman_number(269)
+        self.assertEqual(resultado, "CCLXIX")
+    def test_17(self):
         resultado = roman_number(399)
         self.assertEqual(resultado, "CCCXCIX")
-    def test_16(self):
+    def test_18(self):
         resultado = roman_number(643)
         self.assertEqual(resultado, "DCXLIII")
 
-if __name__ == '__main__':
+if __name__ == '__main__': # pragma: no cover
     unittest.main()

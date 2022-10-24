@@ -31,5 +31,5 @@ class Test(unittest.TestCase):
     def test14(self):
         self.assertEqual(NumberRD("La Campanita"),"Ese no es un numero romano")
 
-if __name__ == "__main__":
+if __name__ == "__main__": # pragma: no cover
     unittest.main()

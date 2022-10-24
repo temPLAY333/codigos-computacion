@@ -2,11 +2,11 @@ import unittest
 
 class Maquinita:
     def __init__(self):
+        self.money = 0
         self.cafe = 30
         self.leche = 50
         self.azucar = 20
-        self.chocolate = 40
-        self.money = 0
+        self.chocolate = 50
         self.matrizTodoPoderosa =  [[1 ,10,0 ,0 ,0 ],
                                     [2 ,20,0 ,0 ,0 ],
                                     [5 ,10,30,0 ,0 ],
@@ -42,7 +42,7 @@ class Maquinita:
         elif cant > self.azucar:
             raise Exception("Machine needs more sugar")
         elif 5*coins < cant:
-            raise Exception("Needs more coins, one each 10g of sugar")
+            raise Exception("Needs more coins, one each 5g of sugar")
         else:
             self.azucar -= cant
             self.money += coins
